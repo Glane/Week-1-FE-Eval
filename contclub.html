@@ -8,113 +8,108 @@
         <!-- put in font awesome -->
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <style type="text/css">
-        * {
+        /** {
             border: 1px solid red;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
+        }*/
+
+        #gallery_photo{
         }
+
 
         #ccphoto {
             height: 400px;
-            margin-left: 200px
+            margin-left: 200px;
+            margin-bottom: 20px;
         }
         #austin {
             margin-left: 100px;
-            height: 200
+            height: 200px;
+            width: 300px;
 
         }
         #houston {
-            margin-left: 100px
+            margin-left: 75px;
+            height: 200px;
+            width: 300px;
         }
-/*
-        body {
-            background-image: "http://www.continentalclub.com/Austin/Home/Background.jpg"
-        }*/
-
-
 
         body { 
-            background: url("http://www.continentalclub.com/Austin/Home/Background.jpg") no-repeat center center fixed;
-/*            opacity: 0.2;
-*/            -webkit-background-size: cover;
+            background-color: black;
+        */ -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+            margin-bottom: 20px;
         }
 
         p {
             text-align: center;
             color: white;
+            margin-bottom: 0;
         }
-        h4 {text-align: center;
-            color: white}
-        /*#test-background {
-            background: url("Background.jpg") no-repeat center center fixed;
-            opacity: 50%;
-        }*/
 
+        h3 {
+            text-align: center;
+            color: white;
+        }
 
+        .button{
+            background-color: black;
+            border-color: #FF4500;
+            border-radius: 20px;
+        }
 
-    </style>
+        .button-group{
+            margin-top: 50px;
+            margin-right: 50px;
+        }
+
+        .large-9 columns nav {
+            margin-top: 50px;
+        }
+
+        </style>
     </head>
-<body>
-      <div class="row">
-    <div class="large-3 columns">
-      <h1><img src="http://placehold.it/400x100&text=Logo" /></h1>
-    </div>
-    <div class="large-9 columns">
-      <ul class="right button-group">
-        <li><a href="#" class="button">Home</a></li>
-        <li><a href="#" class="button">History</a></li>
-        <li><a href="#" class="button">Jukebox</a></li>
-        <li><a href="#" class="button">Linkage</a></li>
-        </ul>
-     </div>
-   </div>
-  
-<!-- End Header and Nav -->
+    <body>
+        <div class="row">
+            <div class="large-3 columns">
+                <h1><img id ="gallery_photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTutzZzr5NLkzr1peUhC3Y-5CPjpfi_ZMa92bdWU-JeFi7QIEy-" /></h1>
+            </div>
+            <div class="large-9 columns nav">
+                <ul class="right button-group">
+                    <li><a href="#" class="button">Home</a></li>
+                    <li><a href="#" class="button">History</a></li>
+                    <li><a href="#" class="button">Jukebox</a></li>
+                    <li><a href="#" class="button">Linkage</a></li>
+                </ul>
+            </div>
+        </div>
  
-<!-- First Band (Slider) -->
- 
-  <div class="row">
-    <div class="large-12 columns">
-    <div id="slider">
-        <img id="ccphoto" src="http://farm1.staticflickr.com/45/151927635_b8f7b6fab8_t.jpg"/>
-    </div>
-    
-    <hr />
-    </div>
-  </div>
-  
-<!-- Three-up Content Blocks -->
- <!-- <div class="bottom_background">
-    <div class="large-12 columns">
-        <img id="curtain_photo" src="http://www.continentalclub.com/Austin/Home/Background.jpg"/>
-    </div>
-</div> -->
+        <div class="row">
+            <div class="large-12 columns">
+                <div id="slider">
+                    <img id="ccphoto" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJjzvOlcgup62VTUs9rVrOxDvI1ruOEWLOfvcPy8e6veQ9sZ3_"/>
+                </div>   
+            </div>
+        </div>
 
-    <div class="row">
-        <div class="large-6 columns" id="test-background">
-      <img id="austin" src="http://placehold.it/300x200&text=[img]" />
-      <h4>AUSTIN</h4>
-      <p>1315 South Congress Avenue, Austin, Texas</p>
-      <p>(512)441-2444</p>
-
-    </div>
+        <div class="row">
+            <div class="large-6 columns" id="test-background">
+                <img id="austin" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ05iI4FZdhuaIy94RVpa7Z9dikakB-nE8h9RymCg8Rg1EGqYeJrQ" />
+                <h3>AUSTIN</h3>
+                <p>1315 South Congress Avenue, Austin, Texas</p>
+                <p>(512)-441-2444</p>
+            </div>
     
-  <!--   <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-    </div> -->
-    
-    <div class="large-6 columns">
-      <img id="houston" src="http://placehold.it/300x200&text=[img]" />
-      <h4>HOUSTON</h4>
-      <p>3700 Main Street, Houston, Texas</p>
-      <p>(512)529-9899</p>
-    </div>
-</div>
-</body>
+            <div class="large-6 columns">
+                <img id="houston" src="http://houston.culturemap.com/crop/417x313/93/photos/2009-08-18/Continental-Club-_-1_.jpg" />
+                <h3>HOUSTON</h3>
+                <p>3700 Main Street, Houston, Texas</p>
+                <p>(512)-529-9899</p>
+            </div>
+        </div>
+    </body>
 </html>
